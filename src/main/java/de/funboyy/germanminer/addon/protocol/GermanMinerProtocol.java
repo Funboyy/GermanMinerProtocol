@@ -34,7 +34,11 @@ public class GermanMinerProtocol extends AddonProtocol {
 
   public static final int LATEST_VERSION = 3;
   public static final int SNAPSHOT_VERSION = 4;
-  public static final Set<Integer> SUPPORTED_VERSIONS = Set.of(LATEST_VERSION, SNAPSHOT_VERSION, 2);
+
+  public static final Set<Integer> SUPPORTED_VERSIONS = Set.of(
+          // SNAPSHOT_VERSION,
+          LATEST_VERSION
+  );
 
   public GermanMinerProtocol(@NotNull final AbstractProtocolService protocolService) {
     super(protocolService, "germanminer");
