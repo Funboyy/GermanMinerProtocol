@@ -14,6 +14,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <developers>
+        <developer>
+            <name>Funboyy</name>
+            <url>https://github.com/Funboyy</url>
+        </developer>
+    </developers>
+
     <distributionManagement>
         <repository>
             <id>github</id>
@@ -37,12 +44,14 @@
             <groupId>net.labymod.serverapi</groupId>
             <artifactId>core</artifactId>
             <version>1.0.6</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>24.1.0</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
