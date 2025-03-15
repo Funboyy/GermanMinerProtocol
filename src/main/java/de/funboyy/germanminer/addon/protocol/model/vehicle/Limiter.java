@@ -27,18 +27,12 @@ public class Limiter {
 
   public void write(@NotNull final PayloadWriter writer) {
     writer.writeBoolean(this.enabled);
-
-    if (this.enabled) {
-      writer.writeVarInt(this.speed);
-    }
+    writer.writeVarInt(this.speed);
   }
 
   public void read(@NotNull final PayloadReader reader) {
     this.enabled = reader.readBoolean();
-
-    if (this.enabled) {
-      this.speed = reader.readVarInt();
-    }
+    this.speed = reader.readVarInt();
   }
 
 }
