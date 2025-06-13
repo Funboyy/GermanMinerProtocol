@@ -32,6 +32,8 @@ import org.jetbrains.annotations.NotNull;
 
 public class GermanMinerProtocol extends AddonProtocol {
 
+  // Dummy change for publish
+
   public static final int LATEST_VERSION = 3;
   public static final int SNAPSHOT_VERSION = 4;
 
