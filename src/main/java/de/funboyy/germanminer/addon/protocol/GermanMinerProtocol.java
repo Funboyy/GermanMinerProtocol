@@ -84,8 +84,6 @@ public class GermanMinerProtocol extends AddonProtocol {
     super.registerPacket(54, PowerUpPacket.class, Direction.CLIENTBOUND);
     super.registerPacket(55, VotePacket.class, Direction.CLIENTBOUND);
     super.registerPacket(56, ZonePacket.class, Direction.CLIENTBOUND);
-
-    // 99+: Snapshot Packets (will be moved later to normal ID's just for better overview while development)
   }
 
 }
